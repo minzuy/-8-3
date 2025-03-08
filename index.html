@@ -246,36 +246,39 @@
         bottom: 15px;
         right: 15px;
       }
-      @media (max-width: 400px) {
+      @media (max-width: 600px) {
         h1 {
           font-size: 2em;
         }
 
         .container {
-          padding: 30px;
+          padding: 20px;
         }
 
         .flower {
-          gap: 10px;
+          flex-direction: row; /* Xếp ngang */
+          justify-content: center; /* Căn giữa các bông hoa */
+          align-items: center; /* Căn giữa theo chiều dọc */
+          gap: 10px; /* Khoảng cách giữa các bông hoa */
         }
 
         .flower-container {
-          width: 100px;
-          height: 100px;
+          width: 80px; /* Giảm kích thước của bông hoa */
+          height: 80px;
         }
 
         .petal {
-          width: 40px;
-          height: 40px;
-        }
-
-        .center {
-          width: 30px;
+          width: 30px; /* Giảm kích thước của cánh hoa */
           height: 30px;
         }
 
+        .center {
+          width: 20px; /* Giảm kích thước của nhụy hoa */
+          height: 20px;
+        }
+
         .stem {
-          display: none;
+          display: none; /* Ẩn cuống hoa trên màn hình nhỏ */
         }
       }
     </style>
